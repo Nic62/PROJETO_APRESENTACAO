@@ -3,9 +3,39 @@
 <head>
     <meta charset="pt-br">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>APRESENTAÇÃO</title>
 </head>
 <body>
-    
+    <section>
+        <div>
+            <h2>Registro de Pedidos</h2>
+            <form id="pedidoForm">
+                <label>Nome:</label>
+                <input type="text" id="nome" required>
+                
+                <label>Sobrenome:</label>
+                <input type="text" id="sobrenome" required>
+                
+                <label>Turno:</label>
+                <select id="turno">
+                    <option value="1º">1º Turno</option>
+                    <option value="2º">2º Turno</option>
+                    <option value="3º">3º Turno</option>
+                </select>
+                
+                <label>Pedido:</label>
+                <textarea id="pedido" required></textarea>
+                
+                <button type="button" onclick="registrarPedido()">Registrar Pedido</button>
+                <input type="hidden" name="horario" value="x-sheetmonkey-current-date-time" />
+            </form>
+            
+            <button onclick="exportarExcel()">Exportar para Excel</button>
+        </div>
+    </section>
+
+
+    <script src="index.js"></script>
 </body>
 </html>
