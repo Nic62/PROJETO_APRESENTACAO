@@ -7,17 +7,25 @@ html{
 
 *{
     margin: 0;
+    padding: 0;
 }
 
 body { 
     font-family: Arial, sans-serif; 
-    margin: 20px; 
+    align-items: center;
+    justify-content: center;
+    
 }
 
 div > form { 
     max-width: 400px; 
     display: flex; 
     flex-direction: column; 
+}
+
+section{
+    padding: 16rem 10rem;
+    background-color: rgb(101, 209, 0);
 }
 
 label, select, input, textarea, button { 
